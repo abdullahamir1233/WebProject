@@ -5,6 +5,7 @@ import Navbar from './Navbar'
 import SearchBar from './Searchbar'
 import Categories from './categories'
 import ListingCard from './listingcard'
+import Footer from './Footer';
 // src/data/listings.js
 
 
@@ -63,6 +64,7 @@ function App() {
             rating={listing.rating}
           />
         ))}
+        <Footer />
       </div>
     </div>
   );
