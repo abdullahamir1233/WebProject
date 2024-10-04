@@ -1,6 +1,6 @@
 [
     {
-      "image": "https://via.placeholder.com/300x200",
+      "image": "/images/villa.jpg",
       "title": "Luxury Beachfront Villa",
       "type": "Entire home",
       "guests": 4,
@@ -10,7 +10,7 @@
       "rating": 4.8
     },
     {
-      "image": "https://via.placeholder.com/300x200",
+      "image": "/images/cozy.jpg",
       "title": "Cozy Mountain Cabin",
       "type": "Cabin",
       "guests": 2,
@@ -20,7 +20,7 @@
       "rating": 4.9
     },
     {
-      "image": "https://via.placeholder.com/300x200",
+      "image": "/images/modern2.jpg",
       "title": "Modern City Apartment",
       "type": "Apartment",
       "guests": 3,
@@ -30,48 +30,7 @@
       "rating": 4.7
     },
     {
-      "image": "https://via.placeholder.com/300x200",
-      "title": "Rustic Countryside House",
-      "type": "Entire home",
-      "guests": 5,
-      "bedrooms": 3,
-      "bathrooms": 2,
-      "price": 275,
-      "rating": 4.6
-    }
-    ,
-    {
-      "image": "https://via.placeholder.com/300x200",
-      "title": "Luxury Beachfront Villa",
-      "type": "Entire home",
-      "guests": 4,
-      "bedrooms": 2,
-      "bathrooms": 2,
-      "price": 350,
-      "rating": 4.8
-    },
-    {
-      "image": "https://via.placeholder.com/300x200",
-      "title": "Cozy Mountain Cabin",
-      "type": "Cabin",
-      "guests": 2,
-      "bedrooms": 1,
-      "bathrooms": 1,
-      "price": 200,
-      "rating": 4.9
-    },
-    {
-      "image": "https://via.placeholder.com/300x200",
-      "title": "Modern City Apartment",
-      "type": "Apartment",
-      "guests": 3,
-      "bedrooms": 1,
-      "bathrooms": 1,
-      "price": 150,
-      "rating": 4.7
-    },
-    {
-      "image": "https://via.placeholder.com/300x200",
+      "image": "/images/rustic.jpg",
       "title": "Rustic Countryside House",
       "type": "Entire home",
       "guests": 5,
