@@ -1,14 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import Navbar from './Navbar'
-import SearchBar from './Searchbar'
-import Categories from './categories'
-import ListingCard from './listingcard'
+import Navbar from './Navbar';
+import SearchBar from './Searchbar';
+import Categories from './categories';
+import ListingCard from './listingcard';
 import Footer from './Footer';
-// src/data/listings.js
-
-
 
 function App() {
   const [listings, setListings] = useState([]); // State to store listings data
@@ -48,7 +43,7 @@ function App() {
       <Navbar />
       <SearchBar />
       <Categories />
-      
+
       {/* Listing Cards */}
       <div className="flex flex-wrap justify-center gap-8 py-8 px-8">
         {listings.map((listing, index) => (
@@ -64,9 +59,12 @@ function App() {
             rating={listing.rating}
           />
         ))}
-        <Footer />
       </div>
+
+      {/* Footer should be outside of the listings */}
+      <Footer />
     </div>
   );
 }
-export default App
+
+export default App;
