@@ -1,5 +1,6 @@
-// src/components/Footer.jsx
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => {
   return (
@@ -18,13 +19,13 @@ const Footer = () => {
           {/* Social Media Icons */}
           <div className="flex space-x-6">
             <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-              <img src="https://via.placeholder.com/24/ffffff/000000?text=F" alt="Facebook" />
+              <FontAwesomeIcon icon={faFacebook} className="text-white text-2xl hover:text-gray-400" />
             </a>
             <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-              <img src="https://via.placeholder.com/24/ffffff/000000?text=T" alt="Twitter" />
+              <FontAwesomeIcon icon={faTwitter} className="text-white text-2xl hover:text-gray-400" />
             </a>
             <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-              <img src="https://via.placeholder.com/24/ffffff/000000?text=I" alt="Instagram" />
+              <FontAwesomeIcon icon={faInstagram} className="text-white text-2xl hover:text-gray-400" />
             </a>
           </div>
         </div>

@@ -13,43 +13,43 @@ const SearchBar = () => {
   };
 
   return (
-    <div className="max-w-5xl mx-auto bg-white rounded-full shadow-md py-2 px-4 flex justify-between items-center mt-4">
+    <div className="max-w-5xl mx-auto bg-white rounded-full shadow-md py-2 px-4 flex flex-wrap justify-center md:justify-between items-center mt-4">
       {/* Location Input */}
-      <div className="flex flex-col px-4">
+      <div className="flex flex-col w-full md:w-auto px-2 mb-2">
         <label className="text-xs font-semibold">Location</label>
         <input
           type="text"
           value={location}
           onChange={(e) => setLocation(e.target.value)}
           placeholder="Where are you going?"
-          className="border-none outline-none text-sm text-gray-600"
+          className="border-none outline-none text-sm text-gray-600 w-full"
         />
       </div>
 
       {/* Check-In Date */}
-      <div className="flex flex-col px-4">
+      <div className="flex flex-col w-full md:w-auto px-2 mb-2">
         <label className="text-xs font-semibold">Check-In</label>
         <input
           type="date"
           value={checkInDate}
           onChange={(e) => setCheckInDate(e.target.value)}
-          className="border-none outline-none text-sm text-gray-600"
+          className="border-none outline-none text-sm text-gray-600 w-full"
         />
       </div>
 
       {/* Check-Out Date */}
-      <div className="flex flex-col px-4">
+      <div className="flex flex-col w-full md:w-auto px-2 mb-2">
         <label className="text-xs font-semibold">Check-Out</label>
         <input
           type="date"
           value={checkOutDate}
           onChange={(e) => setCheckOutDate(e.target.value)}
-          className="border-none outline-none text-sm text-gray-600"
+          className="border-none outline-none text-sm text-gray-600 w-full"
         />
       </div>
 
       {/* Guests Input */}
-      <div className="flex flex-col px-4">
+      <div className="flex flex-col w-full md:w-auto px-2 mb-2">
         <label className="text-xs font-semibold">Guests</label>
         <input
           type="number"

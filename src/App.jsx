@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Navbar from './Navbar';
-import SearchBar from './Searchbar';
+import SearchBar from './SearchBar';
 import Categories from './categories';
 import ListingCard from './listingcard';
 import Footer from './Footer';
@@ -39,7 +39,7 @@ function App() {
   }
 
   return (
-    <div>
+    <div className='gap-y-2 flex flex-col'>
       <Navbar />
       <SearchBar />
       <Categories />
