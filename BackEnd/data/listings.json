@@ -1,47 +1,178 @@
 [
-    {
-      "id": 1,
-      "image": "/images/villa.jpg",
-      "title": "Luxury Beachfront Villa",
-      "type": "Entire home",
-      "guests": 4,
-      "bedrooms": 2,
-      "bathrooms": 2,
-      "price": 350,
-      "rating": 4.8
-    },
-    {
-      "id": 2,
-      "image": "/images/cozy.jpg",
-      "title": "Cozy Mountain Cabin",
-      "type": "Cabin",
-      "guests": 2,
-      "bedrooms": 1,
-      "bathrooms": 1,
-      "price": 200,
-      "rating": 4.9
-    },
-    {
-      "id": 3,
-      "image": "/images/modern2.jpg",
-      "title": "Modern City Apartment",
-      "type": "Apartment",
-      "guests": 3,
-      "bedrooms": 1,
-      "bathrooms": 1,
-      "price": 150,
-      "rating": 4.7
-    },
-    {
-      "id": 4,
-      "image": "/images/rustic.jpg",
-      "title": "Rustic Countryside House",
-      "type": "Entire home",
-      "guests": 5,
-      "bedrooms": 3,
-      "bathrooms": 2,
-      "price": 275,
-      "rating": 4.6
-    }
-  ]
-  
+  {
+    "id": 1,
+    "image": "/images/villa.jpg",
+    "title": "Luxury Beachfront Villa",
+    "type": "Entire home",
+    "guests": 4,
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "price": 350,
+    "rating": 4.8
+  },
+  {
+    "id": 2,
+    "image": "/images/cozy.jpg",
+    "title": "Cozy Mountain Cabin",
+    "type": "Cabin",
+    "guests": 2,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "price": 200,
+    "rating": 4.9
+  },
+  {
+    "id": 3,
+    "image": "/images/modern2.jpg",
+    "title": "Modern City Apartment",
+    "type": "Apartment",
+    "guests": 3,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "price": 150,
+    "rating": 4.7
+  },
+  {
+    "id": 4,
+    "image": "/images/rustic.jpg",
+    "title": "Rustic Countryside House",
+    "type": "Entire home",
+    "guests": 5,
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "price": 275,
+    "rating": 4.6
+  },
+  {
+    "id": 5,
+    "image": "/images/villa.jpg",
+    "title": "Oceanview Luxury Villa",
+    "type": "Entire home",
+    "guests": 6,
+    "bedrooms": 3,
+    "bathrooms": 3,
+    "price": 400,
+    "rating": 4.9
+  },
+  {
+    "id": 6,
+    "image": "/images/cozy.jpg",
+    "title": "Mountain Retreat Cabin",
+    "type": "Cabin",
+    "guests": 2,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "price": 180,
+    "rating": 4.8
+  },
+  {
+    "id": 7,
+    "image": "/images/modern2.jpg",
+    "title": "Downtown Modern Loft",
+    "type": "Apartment",
+    "guests": 2,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "price": 160,
+    "rating": 4.7
+  },
+  {
+    "id": 8,
+    "image": "/images/rustic.jpg",
+    "title": "Countryside Escape House",
+    "type": "Entire home",
+    "guests": 4,
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "price": 250,
+    "rating": 4.5
+  },
+  {
+    "id": 9,
+    "image": "/images/villa.jpg",
+    "title": "Private Beach Villa",
+    "type": "Entire home",
+    "guests": 5,
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "price": 450,
+    "rating": 4.9
+  },
+  {
+    "id": 10,
+    "image": "/images/cozy.jpg",
+    "title": "Cozy Forest Cabin",
+    "type": "Cabin",
+    "guests": 3,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "price": 220,
+    "rating": 4.8
+  },
+  {
+    "id": 11,
+    "image": "/images/modern2.jpg",
+    "title": "Urban Chic Apartment",
+    "type": "Apartment",
+    "guests": 2,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "price": 170,
+    "rating": 4.6
+  },
+  {
+    "id": 12,
+    "image": "/images/rustic.jpg",
+    "title": "Rustic Lakeview House",
+    "type": "Entire home",
+    "guests": 6,
+    "bedrooms": 3,
+    "bathrooms": 3,
+    "price": 300,
+    "rating": 4.7
+  },
+  {
+    "id": 13,
+    "image": "/images/villa.jpg",
+    "title": "Seaside Luxury Villa",
+    "type": "Entire home",
+    "guests": 7,
+    "bedrooms": 4,
+    "bathrooms": 3,
+    "price": 500,
+    "rating": 5.0
+  },
+  {
+    "id": 14,
+    "image": "/images/cozy.jpg",
+    "title": "Romantic Mountain Getaway",
+    "type": "Cabin",
+    "guests": 2,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "price": 210,
+    "rating": 4.8
+  },
+  {
+    "id": 15,
+    "image": "/images/modern2.jpg",
+    "title": "City View Penthouse",
+    "type": "Apartment",
+    "guests": 4,
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "price": 350,
+    "rating": 4.7
+  },
+  {
+    "id": 16,
+    "image": "/images/rustic.jpg",
+    "title": "Tranquil Country Cottage",
+    "type": "Entire home",
+    "guests": 3,
+    "bedrooms": 2,
+    "bathrooms": 1,
+    "price": 230,
+    "rating": 4.6
+  }
+]

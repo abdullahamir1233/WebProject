@@ -57,12 +57,20 @@ function ListingDetails() {
       <h1 className="text-3xl font-semibold mb-2">{title}</h1>
       <p className="text-gray-600">{type} · {guests} guests · {bedrooms} bedrooms · {bathrooms} bathrooms</p>
       <p className="text-xl font-semibold mt-4">Price per night: ${price}</p>
-      <p className="text-gray-500 mt-2">Rating: {rating} ⭐</p>
 
-      {/* Link to Booking Page */}
-      <Link to={`/booking/${id}`} className="mt-6 px-6 py-2 text-white bg-red-500 rounded-lg shadow-md hover:bg-red-600 transition duration-300">
-        Book Now
-      </Link>
+      <div className="flex justify-center items-center mt-2 mb-4">
+        <p className="text-gray-500">Rating: {rating} ⭐</p>
+      </div>
+
+      {/* Button Container with Flex to center */}
+      <div className="flex justify-center mt-6">
+        <Link
+          to={`/booking/${id}`}
+          className="px-6 py-2 text-white bg-red-500 rounded-lg shadow-md hover:bg-red-600 transition duration-300"
+        >
+          Book Now
+        </Link>
+      </div>
     </div>
   );
 }
