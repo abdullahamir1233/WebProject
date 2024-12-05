@@ -45,7 +45,7 @@ function Homepage() {
                 {listings.map((listing, index) => (
                     <ListingCard
                         key={index}
-                        id={index} // Use a unique identifier here if available in your data
+                        id={listing._id} // Use a unique identifier here if available in your data
                         image={listing.image}
                         title={listing.title}
                         type={listing.type}
