@@ -7,6 +7,9 @@ import ListingDetails from './pages/ListingDetails';
 import BookingPage from './pages/BookingPage';
 import AdminHome from './pages/AdminHome';
 import AdminLogin from './pages/AdminLogin';
+import Login from './pages/Login';
+import Signup from './pages/Signup';
+import ProfilePage from './pages/ProfilePage';
 
 function App() {
   return (
@@ -19,6 +22,9 @@ function App() {
           <Route path="/booking/:id" element={<BookingPage />} />
           <Route path="/admin" element={<AdminHome />} />
           <Route path="/admin/login" element={<AdminLogin />} />
+          <Route path='/login' element={<Login />} />
+          <Route path='/signup' element={<Signup />} />
+          <Route path='/profile' element={<ProfilePage />} />
         </Routes>
         <Footer />
       </div>

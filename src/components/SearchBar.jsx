@@ -1,21 +1,49 @@
-// src/components/SearchBar.jsx
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+
+// Dummy data for listings, replace this with real data from your backend or state
+const listings = [
+  { id: 1, name: 'Cozy Apartment in New York' },
+  { id: 2, name: 'Luxury Villa in Bali' },
+  { id: 3, name: 'Beachfront Property in Miami' },
+  { id: 4, name: 'Modern Studio in London' },
+  { id: 5, name: 'Spacious Home in Los Angeles' },
+];
 
 const SearchBar = () => {
   const [location, setLocation] = useState('');
-  const [checkInDate, setCheckInDate] = useState('');
-  const [checkOutDate, setCheckOutDate] = useState('');
-  const [guests, setGuests] = useState(1);
+  const [filteredListings, setFilteredListings] = useState([]);
+  const [selectedListing, setSelectedListing] = useState(null);
+
+  useEffect(() => {
+    if (location.trim() === '') {
+      setFilteredListings([]);
+    } else {
+      const filtered = listings.filter((listing) =>
+        listing.name.toLowerCase().includes(location.toLowerCase())
+      );
+      setFilteredListings(filtered);
+    }
+  }, [location]);
 
   const handleSearch = () => {
-    console.log(`Searching for location: ${location}, Check-In: ${checkInDate}, Check-Out: ${checkOutDate}, Guests: ${guests}`);
-    // Add logic for searching/filtering
+    console.log(`Searching for location: ${location}`);
+    // Add logic to display the selected listing or show relevant results
+    if (selectedListing) {
+      // You can navigate or display the selected listing details here
+      console.log(`Selected listing: ${selectedListing.name}`);
+    }
+  };
+
+  const handleSelect = (listing) => {
+    setLocation(listing.name);  // Set the location to the selected listing name
+    setSelectedListing(listing); // Set the selected listing
+    setFilteredListings([]); // Clear the filtered listings after selection
   };
 
   return (
     <div className="max-w-5xl mx-auto bg-white rounded-full shadow-md py-2 px-4 flex flex-wrap justify-center md:justify-between items-center mt-4">
       {/* Location Input */}
-      <div className="flex flex-col w-full md:w-auto px-2 mb-2">
+      <div className="flex flex-col w-full md:w-auto px-2 mb-2 relative">
         <label className="text-xs font-semibold">Location</label>
         <input
           type="text"
@@ -24,6 +52,21 @@ const SearchBar = () => {
           placeholder="Where are you going?"
           className="border-none outline-none text-sm text-gray-600 w-full"
         />
+
+        {/* Show filtered listings as suggestions */}
+        {filteredListings.length > 0 && (
+          <ul className="absolute top-full left-0 w-full bg-white shadow-lg max-h-60 overflow-auto z-10">
+            {filteredListings.map((listing) => (
+              <li
+                key={listing.id}
+                className="cursor-pointer px-4 py-2 hover:bg-gray-100"
+                onClick={() => handleSelect(listing)}
+              >
+                {listing.name}
+              </li>
+            ))}
+          </ul>
+        )}
       </div>
 
       {/* Check-In Date */}
@@ -31,8 +74,6 @@ const SearchBar = () => {
         <label className="text-xs font-semibold">Check-In</label>
         <input
           type="date"
-          value={checkInDate}
-          onChange={(e) => setCheckInDate(e.target.value)}
           className="border-none outline-none text-sm text-gray-600 w-full"
         />
       </div>
@@ -42,8 +83,6 @@ const SearchBar = () => {
         <label className="text-xs font-semibold">Check-Out</label>
         <input
           type="date"
-          value={checkOutDate}
-          onChange={(e) => setCheckOutDate(e.target.value)}
           className="border-none outline-none text-sm text-gray-600 w-full"
         />
       </div>
@@ -53,8 +92,6 @@ const SearchBar = () => {
         <label className="text-xs font-semibold">Guests</label>
         <input
           type="number"
-          value={guests}
-          onChange={(e) => setGuests(e.target.value)}
           min="1"
           className="border-none outline-none text-sm text-gray-600 w-16"
         />
